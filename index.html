@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Gpt</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h2>CHAT BOT</h2>
+    <!-- Inicio del formulario-->
+    <form id="form-pregunta-chat">
+        <label>Pregunta:</label><br><br>
+        <textarea id="campo-pregunta" rows="5" cols="80" placeholder="Escriba su pregunta"></textarea><br><br>
+        <input type="submit" id="btn-pregunta-chat" value="enviar"><br><br>
+    </form>
+    <!-- fin del formulario-->
+
+    <!-- recibir texto de la pregunta-->
+    <p id="pregunta"></p>
+
+    <!-- recibir texto de la respuesta-->
+    <p id="respuesta"></p>
+
+    <div id="imagen-final"></div>
+
+    <script src="./custom.js"></script>
+</body>
+</html>

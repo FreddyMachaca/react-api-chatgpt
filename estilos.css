@@ -1,0 +1,142 @@
+/* Fuente principal */
+body {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  background-color: #151515;
+  background-image: linear-gradient(to right, #000000 0%, #151515 100%);
+
+}
+
+/* Título */
+h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #d0d0d0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Etiquetas de los campos */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: #d0d0d0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Campos de texto */
+textarea {
+  display: block;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 2rem;
+  border: none;
+  margin-bottom: 2rem;
+  background-color: #1e1e1e;
+  color: #d0d0d0;
+  font-size: 1.5rem;
+  resize: none;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1), 0 0 40px rgba(0, 255, 255, 0.1), inset 0 0 10px rgba(0, 255, 255, 0.2), inset 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #00ffff, 0 0 20px rgba(255, 255, 255, 0.1), 0 0 40px rgba(0, 255, 255, 0.1), inset 0 0 10px rgba(0, 255, 255, 0.2), inset 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+/* Botón de envío */
+input[type="submit"] {
+  background-color: #00ffff;
+  color: #000000;
+  border: none;
+  border-radius: 2rem;
+  padding: 2rem 4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1), 0 0 40px rgba(0, 255, 255, 0.1), inset 0 0 10px rgba(0, 255, 255, 0.2), inset 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+input[type="submit"]:hover {
+  background-color: #00b3b3;
+}
+
+/* Contenedor de las preguntas y respuestas */
+#pregunta, #respuesta {
+  background-color: #1e1e1e;
+  padding: 2.5rem;
+  border-radius: 3rem;
+margin-bottom: 3rem;
+box-shadow: 0 0 20px rgba(255, 255, 255, 0.1), 0 0 40px rgba(0, 255, 255, 0.1), inset 0 0 10px rgba(0, 255, 255, 0.2), inset 0 0 20px rgba(0, 255, 255, 0.2);
+position: relative;
+}
+
+#pregunta:before, #respuesta:before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #000000;
+opacity: 0.5;
+z-index: -1;
+border-radius: 3rem;
+}
+
+#pregunta {
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+}
+
+#respuesta {
+border-bottom-left-radius: 0;
+border-bottom-right-radius: 0;
+}
+
+/* Estilos para pantallas pequeñas /
+@media (max-width: 768px) {
+/ Reducir el tamaño de la fuente principal */
+body {
+font-size: 14px;
+}
+
+/* Reducir el tamaño del botón */
+input[type="submit"] {
+padding: 1.5rem 3rem;
+}
+
+/* Estilos para la imagen al final de la página */
+#imagen-final {
+  background-image: url('./anime.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  margin-top: 3rem;
+}
+
+#imagen-final:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+  z-index: -1;
+}
